@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /travisscott/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^home$ public/index.php?url=home/index [QSA,L]
+RewriteRule ^produit$ public/index.php?url=produit/index [QSA,L]
